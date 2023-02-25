@@ -7,9 +7,9 @@
 **labelGo now supports the latest version of YOLOv5/YOLOv7, and automatic classes.txt file generation**
 
 ## Demonstration of semi-automatic labeling function
-![image](https://github.com/zhuyuliang/labelGo-YoloAutoLabelImg/master/demo/demo1.gif) 
+![image](https://github.com/zhuyuliang/labelGo-YoloAutoLabelImg/demo/demo1.gif) 
 ## Function demonstration of converting Yolo format to VOC format with one click
-![image](https://github.com/zhuyuliang/labelGo-YoloAutoLabelImg/master/demo/demo2.gif) 
+![image](https://github.com/zhuyuliang/labelGo-YoloAutoLabelImg/demo/demo2.gif) 
 
 ## Attention
 <p>If there is a problem, please put it forward in the issue.</p>
