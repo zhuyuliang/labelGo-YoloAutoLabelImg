@@ -1,0 +1,38 @@
+
+# pip install -r requirements.txt
+##pip install -r requirements.txt -i https://pypi.tuna.tsinghua.edu.cn/simple
+##conda install pytorch==1.10.1 torchvision==0.11.2 torchaudio==0.10.1 cudatoolkit=11.3 -c pytorch -c conda-forge
+
+# Other stuff from https://github.com/ultralytics/yolov5/blob/master/requirements.txt
+# base ----------------------------------------
+Cython
+matplotlib>=3.2.2
+numpy>=1.18.5
+Pillow
+PyYAML>=5.3.1
+opencv-python==4.3.0.36
+scipy>=1.4.1
+torch==1.10.1
+tqdm>=4.41.0
+torchvision>=0.8.1
+requests
+
+# logging -------------------------------------
+# wandb
+
+# plotting ------------------------------------
+seaborn>=0.11.0
+pandas
+
+# export --------------------------------------
+# coremltools>=4.1
+# onnx>=1.8.1
+# scikit-learn==0.19.2  # for coreml quantization
+
+# extras --------------------------------------
+thop  # FLOPS computation
+pycocotools>=2.0  # COCO mAP
+pyqt5
+lxml
+opencv-python-headless
+qdarkstyle
