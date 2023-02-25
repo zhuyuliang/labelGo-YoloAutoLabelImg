@@ -4,12 +4,12 @@
 <p>Semi-automatic annotation of datasets by existing yolov7 pytorch models</p>
 
 ## News
-**labelGo now supports the latest version of YOLOv7, and automatic classes.txt file generation**
+**labelGo now supports the latest version of YOLOv5/YOLOv7, and automatic classes.txt file generation**
 
 ## Demonstration of semi-automatic labeling function
-![image](https://github.com/zhuyuliang/labelGo-Yolov7AutoLabelImg/blob/master/demo/demo1.gif) 
+![image](https://github.com/zhuyuliang/labelGo-YoloAutoLabelImg/blob/master/demo/demo1.gif) 
 ## Function demonstration of converting Yolo format to VOC format with one click
-![image](https://github.com/zhuyuliang/labelGo-Yolov7AutoLabelImg/blob/master/demo/demo2.gif) 
+![image](https://github.com/zhuyuliang/labelGo-YoloAutoLabelImg/blob/master/demo/demo2.gif) 
 
 ## Attention
 <p>If there is a problem, please put it forward in the issue.</p>
@@ -17,20 +17,20 @@
 <p>Recommended version of python: python 3.8.</p>
 <p>Recommended for conda environments.</p>
 <p>The item is completely free and it is forbidden to sell the item in any way. </p>
-<p>This project has support for the latest version of YOLOv7</p>
+<p>This project has support for the latest version of YOLOv5/YOLOv7</p>
 
 
 ## Installation and use
 <p>1.Fetching projects from git</p>
 
 ```bash
-git clone https://github.com/zhuyuliang/labelGo-Yolov7AutoLabelImg.git
+git clone https://github.com/zhuyuliang/labelGo-YoloAutoLabelImg.git
 ```
 
 <p>2.Switching the operating directory to the project directory</p>
 
 ```bash
-cd labelGo-Yolov7AutoLabelImg
+cd labelGo-YoloAutoLabelImg
 ```
 
 <p>3.Installation environment</p>
