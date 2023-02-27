@@ -7,7 +7,10 @@ from yolov7.models.common import Conv, DWConv
 from yolov7.utils.google_utils import attempt_download
 
 import sys
-sys.path.insert(0, "/media/sq/DockCase1T/AI/autolabel/labelGo-Yolov7AutoLabelImg/yolov7")
+import os
+dir_name = os.path.abspath(os.path.dirname(__file__))
+libs_path = os.path.join(dir_name, '..')
+sys.path.insert(0, libs_path)
 
 class CrossConv(nn.Module):
     # Cross Convolution Downsample

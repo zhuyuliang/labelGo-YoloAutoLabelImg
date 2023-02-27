@@ -2,6 +2,7 @@
 # pip install -r requirements.txt
 ##pip install -r requirements.txt -i https://pypi.tuna.tsinghua.edu.cn/simple
 ##conda install pytorch==1.10.1 torchvision==0.11.2 torchaudio==0.10.1 cudatoolkit=11.3 -c pytorch -c conda-forge
+# pip install torch==1.10.1+cu113 torchvision==0.11.2+cu113 torchaudio==0.10.1 -f https://download.pytorch.org/whl/cu113/torch_stable.html
 
 # Other stuff from https://github.com/ultralytics/yolov5/blob/master/requirements.txt
 # base ----------------------------------------

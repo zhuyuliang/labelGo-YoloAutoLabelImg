@@ -53,6 +53,7 @@ def attempt_download(file, repo='WongKinYiu/yolov7'):
                 print('')
                 return
 
+    return str(file)
 
 def gdrive_download(id='', file='tmp.zip'):
     # Downloads a file from Google Drive. from yolov7.utils.google_utils import *; gdrive_download()
