@@ -11,6 +11,11 @@ import torch.nn as nn
 from yolov5.models.common import Conv
 from yolov5.detect_utils.downloads import attempt_download
 
+import sys
+import os
+dir_name = os.path.abspath(os.path.dirname(__file__))
+libs_path = os.path.join(dir_name, '..')
+sys.path.insert(0, libs_path)
 
 class CrossConv(nn.Module):
     # Cross Convolution Downsample

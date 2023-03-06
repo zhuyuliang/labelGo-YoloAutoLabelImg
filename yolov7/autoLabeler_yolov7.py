@@ -14,7 +14,14 @@ from yolov7.utils.general import check_img_size, check_requirements, check_imsho
 from yolov7.utils.plots import plot_one_box
 from yolov7.utils.torch_utils import select_device, load_classifier, time_synchronized, TracedModel
 
+from threading import Thread
 
+def async_call(fn):
+        def wrapper(*args, **kwargs):
+            Thread(target=fn, args=args, kwargs=kwargs).start()
+        return wrapper
+
+@async_call
 def start(weight_path, last_open_dir, isCrop):
     parser = argparse.ArgumentParser()
     parser.add_argument('--weights', nargs='+', type=str, default=weight_path[0], help='model.pt path(s)')

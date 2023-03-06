@@ -15,8 +15,8 @@ import torch
 import torch.nn as nn
 from torch.utils.mobile_optimizer import optimize_for_mobile
 
-import models
-from models.experimental import attempt_load
+import yolov5.models
+from yolov5.models.experimental import attempt_load
 from libs.detect_utils.activations import Hardswish, SiLU
 from libs.detect_utils.general import colorstr, check_img_size, check_requirements, file_size, set_logging
 from libs.detect_utils.torch_utils import select_device

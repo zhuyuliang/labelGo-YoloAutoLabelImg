@@ -53,8 +53,6 @@ from libs.create_ml_io import JSON_EXT
 from libs.ustr import ustr
 from libs.hashableQListWidgetItem import HashableQListWidgetItem
 # from yolov5.autoLabeler_yolov5 import *
-from yolov5 import autoLabeler_yolov5
-from yolov7 import autoLabeler_yolov7
 from libs.yolo2voc import *
 
 __appname__ = 'labelGo_Based on labelImg'
@@ -1342,6 +1340,7 @@ class MainWindow(QMainWindow, WindowMixin):
         self.last_open_dir = target_dir_path
         self.import_dir_images(target_dir_path)
 
+
     def yolo_dialog_clicked(self, yoloName):
         attention_get = QMessageBox.question(self, 'Attention', 'This operation will clear all the original annotation files. Click Yes to select the ' + yoloName + ' weight and continue.此操作将会清除所有的原有标注文件，点击Yes以选择' + yoloName + '权重并继续。', QMessageBox.Yes | QMessageBox.No)  # 创建一个二次确认框
         if attention_get == QMessageBox.Yes:
@@ -1365,11 +1364,13 @@ class MainWindow(QMainWindow, WindowMixin):
             if scrop_get == QMessageBox.Yes:
                 isCrop = True
             self.setWindowTitle('Labeling...')
+            from yolov7 import autoLabeler_yolov7
             autoLabeler_yolov7.start(weight_path, self.last_open_dir,isCrop)
             self.import_dir_images(self.last_open_dir)
             self.setWindowTitle(__appname__)
         elif yoloName == "yolov5":
             self.setWindowTitle('Labeling...')
+            from yolov5 import autoLabeler_yolov5
             autoLabeler_yolov5.start(weight_path, self.last_open_dir)
             self.import_dir_images(self.last_open_dir)
             self.setWindowTitle(__appname__)
